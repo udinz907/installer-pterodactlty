@@ -189,36 +189,7 @@ sudo systemctl start wings
   clear
   exit 0
 }
-hackback_panel() {
-  echo -e "                                                       "
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]                    HACK BACK PANEL                 [+]${NC}"
-  echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "                                                       "
-  # Minta input dari pengguna
-read -p "Masukkan Username Panel: " user
-read -p "password login " psswd
-  #!/bin/bash
-cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
 
-# Membuat lokasi baru
-php artisan p:user:make <<EOF
-yes
-hackback@gmail.com
-$user
-$user
-$user
-$psswd
-EOF
-  echo -e "                                                       "
-  echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "${GREEN}[+]                 AKUN TELAH DI ADD             [+]${NC}"
-  echo -e "${GREEN}[+] =============================================== [+]${NC}"
-  echo -e "                                                       "
-  sleep 2
-  
-  exit 0
-}
 # Main script
 display_welcome
 install_jq
@@ -235,9 +206,8 @@ while true; do
   echo "3. Configure Wings"
   echo "4. Create Node"
   echo "5. Uninstall Panel"
-  echo "6. Hack Back Panel"
   echo "x. Exit"
-  echo -e "Masukkan pilihan (3/4/x):"
+  echo -e "Masukkan pilihan (3/4/5):"
   read -r MENU_CHOICE
   clear
 
@@ -250,9 +220,6 @@ while true; do
       ;;
       5)
       uninstall_panel
-      ;;
-      6)
-      hackback_panel
       ;;
     x)
       echo "Keluar dari skrip."
