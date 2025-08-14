@@ -3,11 +3,11 @@
 # [+] - INSTALLER PTERODACTYL                         [+]
 # [+]                                                 [+]
 # [+]  TQTO :                                         [+]
-# [+] • WannOffc ( MySelf)                            [+]
+# [+] • Gustafhosting ( MySelf)                            [+]
 # [+] • Creator Bot WhatsApp & Telegram               [+]
 # [+] • Para Pengguna Bot Tele & Wa                   [+]
 # [+]                                                 [+]
-# [+] © CreateByWannFyy                               [+]
+# [+] © Createby Gustafhosting                               [+]
 # [+] =============================================== [+]
 
 #!/bin/bash
@@ -32,11 +32,11 @@ display_welcome() {
   echo -e "script ini di buat untuk mempermudah penginstalasian pterodactyle,"
   echo -e "dilarang keras untuk memperjual belikan."
   echo -e ""
-  echo -e "JANGAN LUPA SUBSCRIBE @WANNOFFC"
+  echo -e "JANGAN LUPA SUBSCRIBE : GUSTAF LR"
   echo -e ""
   echo -e "TQ TO :"
   echo -e "ALL CREATOR WHATSAPP"
-  echo -e "WANNOFFICIAL ( MY SELF )"
+  echo -e "GUSTAFHOSTING ( MY SELF )"
   sleep 4
   clear
 }
@@ -69,13 +69,13 @@ install_jq() {
 check_token() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY VALLZ OFFC             [+]${NC}"
+  echo -e "${BLUE}[+]               LICENSE GUSTAF HOSTING             [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "iniwannbroku" ]; then
+  if [ "$USER_TOKEN" = "gustafhostingdev" ]; then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${GREEN} Silahkan Tanyakan Kepada WannOFFICIAL Jika Token Salah.${NC}"
